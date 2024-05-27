@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Registrion</h1>
+<form action="/detils/save" method="post">
+
+ <label for="name">name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        
+ <label for="lastname">lastname:</label><br>
+        <input type="text" id="lastname" name="lastname"><br>
+        
+        <label for="email">email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        
+              
+        <label for="address">address:</label><br>
+        <input type="text" id="address" name="address"><br>
+        
+        <label for="password">password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+<div><span>Already registered? <a th:href="@{/login}"> Login here</a> </span></div>
+
+</body>
+</html>
